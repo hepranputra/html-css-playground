@@ -3,8 +3,22 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 16x;
+}
 
-    margin-left: 64px;
+.thumbnail-div {
+    position: relative;
+}
+
+.duration {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 6px;
+    margin: 0;
 }
 
 .thumbnail-img {

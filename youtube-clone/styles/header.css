@@ -9,6 +9,8 @@
     height: 60px;
     left: 0;
     border-bottom: 1px solid #cccccc;
+
+    z-index: 2;
 }
 
 /* LEFT SECTION */
@@ -95,6 +97,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* I like it despite the teacher doesn't show it like that. */
     /* flex-shrink: 0; */
 }
 
@@ -106,15 +109,33 @@
     width: 24px;
 }
 
+.notif-div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .notif-img {
     width: 24px;
 }
 
-.my-channel-img {
-    width: 24px;
-    height: 24px;
-    object-fit: cover;
+.notif-counter {
+    background-color: #cc0000;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: -13px;
+    right: -7px;
+    padding: 2px 5px;
     border-radius: 12px;
+    border: 2px solid white;
+}
+
+.my-channel-img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 14px;
 
     margin-right: 24px;
 }

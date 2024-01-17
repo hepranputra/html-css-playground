@@ -1,8 +1,8 @@
 .body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 16px;
-    row-gap: 16x;
+    row-gap: 24px;
 }
 
 .thumbnail-div {
@@ -19,6 +19,7 @@
     font-weight: bold;
     padding: 4px 6px;
     margin: 0;
+    border-radius: 4px;
 }
 
 .thumbnail-img {
@@ -49,13 +50,14 @@
 
 .video-title {
     margin-top: 0;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .channel-name, .stat {
     color: gray;
-    font-size: 14px;
+    /* font-size: 14px; */
 }
 
 .channel-name {

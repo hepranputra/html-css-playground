@@ -1,9 +1,8 @@
 body {
     margin: 0;
     margin-bottom: 1000px;
-    padding-top: 80px;
-    padding-left: 90px;
-    font-family: Arial;
+    padding-top: 84px;
+    padding-left: 94px;
     background-color: #F9F9F9;
 }
 
@@ -16,4 +15,10 @@ body {
 
 .search-btn:active, .voice-search-btn:active {
     box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+/* General setting for body */
+p {
+    font-family: Arial;
+    font-size: 12px;
 }

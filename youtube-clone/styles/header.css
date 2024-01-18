@@ -6,7 +6,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    height: 60px;
+    height: 56px;
     left: 0;
     border-bottom: 1px solid #cccccc;
 
@@ -72,10 +72,29 @@
 
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    position: relative;
 }
 
 .search-img {
     width: 24px;
+}
+
+.search-btn .tooltip {
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    
+    position: absolute;
+    bottom: -45px;
+    right: 4px;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-btn:hover .tooltip {
+    opacity: 1;
 }
 
 .voice-search-btn {
@@ -84,10 +103,30 @@
     border-radius: 20px;
     background-color: #f7f7f7;
     border: none;
+    position: relative;
 }
 
 .voice-search-img {
     width: 24px;
+}
+
+.voice-search-btn .tooltip {
+    background-color: gray;
+    color: white;
+    width: 130px;
+    padding: 4px 2px;
+    border-radius: 4px;
+
+    position: absolute;
+    bottom: -45px;
+    right: -46px;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.voice-search-btn:hover .tooltip {
+    opacity: 1;
 }
 
 /* RIGHT SECTION */
@@ -101,16 +140,74 @@
     /* flex-shrink: 0; */
 }
 
+.upload-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.upload-div .tooltip {
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    
+    position: absolute;
+    bottom: -52px;
+
+    pointer-events: none;
+    opacity: 0;
+}
+
+.upload-div:hover .tooltip {
+    opacity: 1;
+}
+
 .upload-img {
     width: 24px;
+}
+
+.youtube-apps-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
 }
 
 .youtube-apps-img {
     width: 24px;
 }
 
+.youtube-apps-div .tooltip {
+    background-color: gray;
+    color: white;
+    width: 80px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    
+    position: absolute;
+    bottom: -52px;
+
+    pointer-events: none;
+    opacity: 0;
+}
+
+.youtube-apps-div:hover .tooltip {
+    opacity: 1;
+}
+
 .notif-div {
     position: relative;
+    display: flex;
+    flex-direction: columns;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-counter-div {
     display: flex;
     align-items: center;
 }
@@ -118,6 +215,24 @@
 .notif-img {
     width: 24px;
 }
+
+.notif-div .tooltip {
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+
+    position: absolute;
+    bottom: -52px;
+
+    pointer-events: none;
+    opacity: 0;
+}
+
+.notif-div:hover .tooltip {
+    opacity: 1;
+}
+
 
 .notif-counter {
     background-color: #cc0000;

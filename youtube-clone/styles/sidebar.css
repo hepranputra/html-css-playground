@@ -1,8 +1,38 @@
 .sidebar {
     position: fixed;
     top: 60px;
-    width: 70px;
+    width: 72px;
     bottom: 0;
     left: 0;
-    background-color: lightgreen;
+    background-color: white;
+}
+
+.sidebar-box {
+    height: 74px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: box-shadow 0.25s;
+    padding-top: 0;
+}
+
+.sidebar-box:hover {
+    background-color: lightgray;
+}
+
+.sidebar-box:active {
+    box-shadow: 0 0 4px rgba(0,0,0, 0.5);
+}
+
+.sidebar-box img {
+    height: 22px;
+}
+
+.sidebar-box p {
+    font-size: 10px;
+    margin-top: 6px;
 }

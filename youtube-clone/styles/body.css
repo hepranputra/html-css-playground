@@ -5,6 +5,12 @@
     row-gap: 24px;
 }
 
+@media (max-width: 700px) {
+    .body {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .thumbnail-div {
     position: relative;
 }
